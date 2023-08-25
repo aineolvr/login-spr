@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/textfield@11.0.0/dist/mdc.textfield.min.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Login SPR</title>
+    <link href="./style.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container-login">
+    
+    <div class="login-container">
+        <img class="logo-login" src="./images/Imagem do WhatsApp de 2023-08-07 à(s) 18.02.24.jpg">
+
+        <h2 class="h2-login">Faça login na plataforma de credenciamento</h2>
+
+        <div class="mdc-text-field mdc-text-field--outlined input-email">
+            <input type="text" id="" class="mdc-text-field__input ">
+            <div class="mdc-notched-outline">
+                <div class="mdc-notched-outline__leading"></div>
+                <div class="mdc-notched-outline__notch">
+                    <label for="my-input" class="mdc-floating-label">E-mail</label>
+                </div>
+                <div class="mdc-notched-outline__trailing"></div>
+            </div>
+        </div>
+
+        <div class="mdc-text-field mdc-text-field--outlined  input-senha">
+            <input type="password" id="" class="mdc-text-field__input">
+            <div class="mdc-notched-outline">
+                <div class="mdc-notched-outline__leading"></div>
+                <div class="mdc-notched-outline__notch">
+                    <label for="my-input" class="mdc-floating-label">Senha</label>
+                </div>
+                <div class="mdc-notched-outline__trailing"></div>
+            </div>
+        </div>
+
+        <a class="link-login" href="#">Esqueci minha senha</a>
+
+        <div class="mdc-touch-target-wrapper">
+            <button class="mdc-button mdc-button--touch btn-entrar" style="color: white; background-color: black; border: 1px solid black; "  >
+              <span class="mdc-button__ripple"></span>
+              <span class="mdc-button__touch"></span>
+              <span class="mdc-button__label">Entrar</span>
+            </button>
+        </div>
+
+    </div><!--login-container-->
+</div><!--container-login-->
+
+
+<footer class="footer-login"><p class="p-login"> © 2023- SPR Sistemas de controle</p></footer>
+
+<script>
+const textFields = document.querySelectorAll('.mdc-text-field');
+textFields.forEach((textField) => {
+    mdc.textField.MDCTextField.attachTo(textField);
+});
+</script>
+
+  <script src="./script.js"></script>
+</body>
+</html>
