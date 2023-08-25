@@ -2777,24 +2777,36 @@ tbody  td{
 
 .input-email{
     margin-bottom: 10px;
-     width: 260px;
+     width: 270px;
      height: 48px;
      border-radius: 8px;
  }
  
  .input-senha{
      margin-bottom: 10px;
-     width: 260px;
+     width: 270px;
      height: 48px;
      border-radius: 8px;
  }
 
  .btn-entrar{
     margin-top: 20px;
-    width: 260px;
+    width: 270px;
     height: 48px;
     border-radius: 8px;
     margin-bottom: 20px;
+}
+
+
+.footer-login{
+    justify-content: center;
+    display: flex;
+  align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
   }
